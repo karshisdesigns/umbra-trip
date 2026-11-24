@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Umbra's Road Trip</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;800;900&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="carIcon" viewBox="0 0 64 44">
+<ellipse cx="32" cy="41" rx="28" ry="3" fill="rgba(0,0,0,.25)"/>
+<rect x="2" y="18" width="60" height="18" rx="8" fill="#1f4fa3"/>
+<rect x="2" y="30" width="60" height="6" rx="3" fill="#163d80"/>
+<path d="M14 18 L20 6 H44 L52 18Z" fill="#3a6cc4"/>
+<path d="M34 8 H43 L49 18 H34Z" fill="#cfe0ff"/>
+<path d="M22 8 H31 V18 H17Z" fill="#cfe0ff"/>
+<circle cx="26" cy="12" r="6" fill="#222"/>
+<path d="M21 8 l2 -7 l5 6z" fill="#222"/>
+<path d="M30 8 l3 -6 l2 7z" fill="#222"/>
+<circle cx="24" cy="12" r="1.3" fill="#fff"/>
+<ellipse cx="21" cy="15" rx="2.4" ry="1.6" fill="#111"/>
+<circle cx="16" cy="36" r="6" fill="#111"/><circle cx="16" cy="36" r="2.5" fill="#999"/>
+<circle cx="48" cy="36" r="6" fill="#111"/><circle cx="48" cy="36" r="2.5" fill="#999"/>
+<rect x="58" y="22" width="4" height="5" rx="1" fill="#ffcc29"/>
+</symbol>
+<symbol id="pawIcon" viewBox="0 0 24 24"><ellipse cx="12" cy="16" rx="6" ry="5"/><circle cx="5" cy="9" r="2.4"/><circle cx="9.5" cy="5" r="2.4"/><circle cx="14.5" cy="5" r="2.4"/><circle cx="19" cy="9" r="2.4"/></symbol>
+</defs>
+</svg>
+<section class="band hero">
+<div class="wrap">
+<h1>Alexander and Umbra's drive to San Antonio</h1>
+<p>Leave Friday morning, one night in Tulsa, home in San Antonio Saturday afternoon. Dog-friendly hotel, dog parks at every stop, and lots of check-ins with Mom.</p>
+<div class="facts">
+<div class="fact"><b>Fri Dec 18</b><span>leave Chicago</span></div>
+<div class="fact"><b>Tulsa</b><span>Embassy Suites, ~$115 a night</span></div>
+<div class="fact"><b>~$340</b><span>each way: gas, food, hotel</span></div>
+<div class="fact"><b>~$690–840</b><span>round trip, everything in</span></div>
+<div class="fact hot"><b>Sat Dec 19</b><span>arrive in San Antonio</span></div>
+</div>
+<div class="fig" id="route" role="img" aria-label="Route: Chicago, Springfield IL, St. Louis, Springfield MO, Tulsa overnight, Dallas, Waco, San Antonio"><svg></svg></div>
+<a class="cta" href="#trip"><svg class="paw" style="fill:var(--green)"><use href="#pawIcon"/></svg>Ride along with us</a>
+</div>
+</section>
+<section class="band" id="trip">
+<div class="wrap">
+<h2 class="rv">Ride along, stop by stop</h2>
+<p class="lede rv">Scroll down and the car drives with you. A stop every 2 to 3 hours so Umbra can stretch, sniff and drink water. Times are a plan, not a deadline.</p>
+<div class="trip" id="tripline">
+<div class="meter" aria-live="polite">
+<div><small>Where we are</small><b id="mWhere">Chicago</b></div>
+<div><small>Miles</small><b id="mMiles">0</b></div>
+<div class="m-money"><small>Spent so far</small><b id="mMoney">$0</b></div>
+<span class="bar"><i id="mBar"></i></span>
+</div>
+<div class="road" aria-hidden="true"></div>
+<svg class="car" id="tcar" viewBox="0 0 64 44" aria-hidden="true"><use href="#carIcon"/></svg>
+<ol class="stops">
+<li class="day-sign rv"><h3>Friday: Chicago to Tulsa</h3><p>Fri Dec 18 · about 690 miles · I-55 then I-44 · day total <b class="nowrap">~$238</b></p></li>
+<li class="stop big rv" data-where="Chicago" data-mile="0" data-money="0">
+<span class="t">7:00 am</span>
+<h4>Leave Chicago</h4>
+<p>Full tank from home. Text Mom, location sharing on.</p>
+<div class="chips"><span class="chip free">Full tank from home</span></div>
+<span class="says"><b>Umbra:</b> Window down please.</span>
+</li>
+<li class="stop rv" data-where="Springfield, IL" data-mile="200" data-money="0">
+<span class="t">10:00 am</span>
+<h4>Springfield, IL</h4>
+<p>Potty break and a run at Stuart Park dog park (fenced).</p>
+<div class="chips"><span class="chip free">Walk, free</span></div>
+</li>
+<li class="stop rv" data-where="St. Louis" data-mile="300" data-money="57">
+<span class="t">12:00 pm</span>
+<h4>St. Louis: lunch + gas</h4>
+<p>Fill up and grab lunch. Lunch text. Walk at Broemmelsiek Park off-leash area.</p>
+<div class="chips"><span class="chip gas">Gas ~$37</span><span class="chip food">Lunch ~$20</span></div>
+<span class="says"><b>Umbra:</b> Did someone say lunch?</span>
+</li>
+<li class="stop rv" data-where="Springfield, MO" data-mile="515" data-money="57">
+<span class="t">3:15 pm</span>
+<h4>Springfield, MO</h4>
+<p>Stretch and walk at Ritter Springs Park.</p>
+<div class="chips"><span class="chip free">Walk, free</span></div>
+</li>
+<li class="stop big rv" data-where="Tulsa" data-mile="690" data-money="238">
+<span class="t">7:00 pm</span>
+<h4>Tulsa: gas + Embassy Suites</h4>
+<p>Fill up near the hotel. Check-in text. Free evening reception drinks, then dinner, a long walk and an early night.</p>
+<div class="chips"><span class="chip gas">Gas ~$46</span><span class="chip food">Dinner ~$20</span><span class="chip hotel">Hotel ~$115</span></div>
+</li>
+<li class="night rv"><span class="stars" aria-hidden="true"></span><h4>Goodnight from Tulsa</h4><p>A two-room suite, a big walk, and both of us asleep early. Halfway there.</p></li>
+<li class="day-sign rv"><h3>Saturday: Tulsa to San Antonio</h3><p>Sat Dec 19 · about 530 miles · US-75 then I-35 · day total <b class="nowrap">~$101</b></p></li>
+<li class="stop big rv" data-where="Tulsa" data-mile="690" data-money="238">
+<span class="t">8:00 am</span>
+<h4>Leave Tulsa</h4>
+<p>Morning walk with Umbra first. Text Mom.</p>
+<div class="chips"><span class="chip free">Walk, free</span></div>
+<span class="says"><b>Umbra:</b> Is it Texas yet?</span>
+</li>
+<li class="stop rv" data-where="Dallas" data-mile="950" data-money="288">
+<span class="t">12:00 pm</span>
+<h4>Dallas: lunch + gas</h4>
+<p>Fill up and grab lunch. Lunch text. Walk at Central Commons dog park or Bark Park Central.</p>
+<div class="chips"><span class="chip gas">Gas ~$30</span><span class="chip food">Lunch ~$20</span></div>
+<span class="says"><b>Umbra:</b> It's Texas!</span>
+</li>
+<li class="stop rv" data-where="Waco" data-mile="1045" data-money="288">
+<span class="t">2:00 pm</span>
+<h4>Waco</h4>
+<p>Stretch and walk at Holly Dog Park (open 24 hours).</p>
+<div class="chips"><span class="chip free">Walk, free</span></div>
+</li>
+<li class="stop big rv" data-where="San Antonio" data-mile="1220" data-money="339">
+<span class="t">5:00 pm</span>
+<h4>San Antonio</h4>
+<p>Top off the tank in town and grab dinner.</p>
+<div class="chips"><span class="chip gas">Gas ~$31</span><span class="chip food">Dinner ~$20</span></div>
+</li>
+<li class="arrive rv"><h4>Home for Christmas</h4><p>Umbra gets to see Amber and the grandparents. Hugs first, unpacking later.</p></li>
+</ol>
+</div>
+<p class="small rv">Gas figured at about 28 miles per gallon and mid-November 2026 state averages: Illinois about $4.07, Missouri $3.45, Oklahoma $3.28, Texas $3.22 a gallon. Fill up in Missouri, Oklahoma and Texas, where it is cheaper. Food is lunch and dinner, about $20 each. Umbra's food is packed from home. The drive back is the same in reverse, with the same hotel.</p>
+</div>
+</section>
+<section class="band alt">
+<div class="wrap">
+<h2 class="rv">Where we sleep</h2>
+<p class="lede rv">One hotel, right off I-44, so no city driving after a long day. Same hotel on the drive back.</p>
+<div class="card rv" style="max-width:760px">
+<span class="tag">Friday night + drive back</span><span class="tag">Dogs welcome</span><span class="tag">Free drinks at 5:30</span>
+<h3>Embassy Suites by Hilton Tulsa I-44</h3>
+<p>3332 S 79th East Ave, Tulsa, OK 74145</p>
+<p>Free evening reception with drinks and snacks in the atrium, plus a free cooked-to-order breakfast. A two-room suite, so Umbra has space to settle in. Indoor pool and a steakhouse on site.</p>
+<p class="small">About 15 minutes from downtown Tulsa. About $100–130 a night.</p>
+</div>
+</div>
+</section>
+<section class="band">
+<div class="wrap">
+<h2 class="rv">What it costs</h2>
+<p class="lede rv">All numbers are estimates until the rooms are booked.</p>
+<div class="cgrid">
+<div class="costs rv">
+<h3 class="ch">Going down: Fri Dec 18 to Sat Dec 19</h3>
+<div class="crow"><span>Gas, about 1,220 miles</span><b>~$144</b></div>
+<div class="crow"><span>Lunch + dinner, 2 days</span><b>~$80</b></div>
+<div class="crow"><span>Embassy Suites Tulsa, 1 night</span><b>~$115</b></div>
+<div class="crow total"><span>Total</span><b>~$339</b></div>
+</div>
+<div class="costs rv">
+<h3 class="ch">Coming back: same route in reverse</h3>
+<div class="crow"><span>Gas, about 1,220 miles (last fill-up in Illinois costs more)</span><b>~$153</b></div>
+<div class="crow"><span>Lunch + dinner, 2 days</span><b>~$80</b></div>
+<div class="crow"><span>Embassy Suites Tulsa, 1 night</span><b>~$115</b></div>
+<div class="crow total"><span>Total</span><b>~$348</b></div>
+</div>
+<div class="costs rv">
+<h3 class="ch">Whole trip</h3>
+<div class="crow"><span>Gas, about 2,440 miles</span><b>~$297</b></div>
+<div class="crow"><span>Food, 4 driving days</span><b>~$160</b></div>
+<div class="crow"><span>Hotel, 2 nights</span><b>~$230</b></div>
+<div class="crow"><span>Hotel pet fees ($0 for a task-trained service dog)</span><b>$0–150</b></div>
+<div class="crow total"><span>Total</span><b>~$690–840</b></div>
+</div>
+</div>
+<p class="small rv">For comparison: boarding Umbra in Chicago for 9 nights was about $765, plus a plane ticket for Alexander. Driving costs less, and Umbra gets Christmas with the family.</p>
+</div>
+</section>
+<section class="band alt">
+<div class="wrap">
+<div class="grid">
+<div class="card rv">
+<h3>Dog parks on the way</h3>
+<p class="city">Springfield, IL</p>
+<ul class="list"><li><b>Stuart Park dog park</b><span>1800 Winch Ln · fenced · 7 am to 10 pm</span></li></ul>
+<p class="city">St. Louis area</p>
+<ul class="list"><li><b>Broemmelsiek Park off-leash area</b><span>1795 Hwy DD, Defiance · <span class="nowrap">636-949-7535</span></span></li></ul>
+<p class="city">Springfield, MO</p>
+<ul class="list"><li><b>Ritter Springs Park</b><span>3683 W Farm Rd 92 · <span class="nowrap">417-864-1049</span></span></li></ul>
+<p class="city">Dallas</p>
+<ul class="list"><li><b>Central Commons dog park</b><span>4711 Westside Dr · 7 am to 8 pm</span></li><li><b>Bark Park Central</b><span>2530 Commerce St · 6 am to 11 pm</span></li></ul>
+<p class="city">Waco</p>
+<ul class="list"><li><b>Holly Dog Park</b><span>721 Wooded Crest Dr · open 24 hours</span></li></ul>
+</div>
+<div class="card rv">
+<h3>24-hour emergency vets</h3>
+<p class="small">Just in case. Saved in Alexander's phone too.</p>
+<p class="city">Springfield, IL</p>
+<ul class="list"><li><b>Animal Emergency Clinic</b><span>821 S Durkin Dr · <a href="tel:2178600103" class="nowrap">217-860-0103</a></span></li></ul>
+<p class="city">St. Louis</p>
+<ul class="list"><li><b>VEG ER for Pets</b><span>2101 S Brentwood Blvd · <a href="tel:3149702545" class="nowrap">314-970-2545</a></span></li><li><b>Animal Emergency Clinic</b><span>9937 Big Bend Rd, Kirkwood · <a href="tel:3145260816" class="nowrap">314-526-0816</a></span></li></ul>
+<p class="city">Tulsa</p>
+<ul class="list"><li><b>Animal Emergency Center of Tulsa</b><span>4055 S 102nd E Ave · <a href="tel:9186650508" class="nowrap">918-665-0508</a></span></li><li><b>Oklahoma Veterinary Specialists</b><span>1501 W 78th St · <a href="tel:9182994900" class="nowrap">918-299-4900</a></span></li></ul>
+<p class="city">Dallas</p>
+<ul class="list"><li><b>VEG ER for Pets</b><span>4500 N Central Expy · <a href="tel:9725447311" class="nowrap">972-544-7311</a></span></li><li><b>MedVet Dallas</b><span>11333 N Central Expy · <a href="tel:9729949110" class="nowrap">972-994-9110</a></span></li></ul>
+</div>
+<div class="card rv">
+<h3>Umbra's bag</h3>
+<ul class="check">
+<li>Food for the trip + a few extra days</li>
+<li>Collapsible water bowl and a full jug of water</li>
+<li>Leash, backup leash, harness</li>
+<li>Car seat cover or hammock</li>
+<li>Her bed or blanket that smells like home</li>
+<li>Poop bags and paper towels</li>
+<li>Chew toy for the long stretches</li>
+<li>Up-to-date vaccine records (on phone + printed)</li>
+<li>Any meds, plus treats for good-girl stops</li>
+<li>ID tag with Alexander's phone number</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="band">
+<div class="wrap">
+<h2 class="rv">Promises to Mom</h2>
+<p class="lede rv">So nobody has to wonder where we are.</p>
+<ul class="promise">
+<li class="rv"><b><svg class="paw"><use href="#pawIcon"/></svg>Live location on</b>Shared with you the whole drive.</li>
+<li class="rv"><b><svg class="paw"><use href="#pawIcon"/></svg>Text at every big stop</b>Leaving, lunch, and hotel check-in each day.</li>
+<li class="rv"><b><svg class="paw"><use href="#pawIcon"/></svg>Breaks every 2 to 3 hours</b>For Umbra and for me. No pushing through tired.</li>
+<li class="rv"><b><svg class="paw"><use href="#pawIcon"/></svg>Weather check</b>If there's ice or snow, we wait a day. San Antonio isn't going anywhere.</li>
+<li class="rv"><b><svg class="paw"><use href="#pawIcon"/></svg>Car ready</b>Tires, oil and wipers checked before we leave.</li>
+<li class="rv"><b><svg class="paw"><use href="#pawIcon"/></svg>Vet visit first</b>Umbra gets her rabies and other shots updated before the trip.</li>
+</ul>
+</div>
+</section>
+<footer class="band alt">
+<svg viewBox="0 0 140 90" width="140" height="90" aria-hidden="true" class="rv">
+<ellipse cx="70" cy="84" rx="50" ry="4" fill="rgba(0,0,0,.15)"/>
+<g class="wag"><path d="M28 46 Q10 30 14 16" stroke="#222" stroke-width="7" fill="none" stroke-linecap="round"/></g>
+<rect x="26" y="40" width="70" height="30" rx="15" fill="#222"/>
+<rect x="32" y="62" width="9" height="22" rx="4" fill="#222"/><rect x="48" y="62" width="9" height="22" rx="4" fill="#222"/>
+<rect x="72" y="62" width="9" height="22" rx="4" fill="#222"/><rect x="86" y="62" width="9" height="22" rx="4" fill="#222"/>
+<circle cx="104" cy="36" r="17" fill="#222"/>
+<path d="M94 24 l2 -16 l10 12z" fill="#222"/><path d="M108 22 l8 -14 l2 16z" fill="#222"/>
+<ellipse cx="120" cy="42" rx="8" ry="6" fill="#222"/><ellipse cx="126" cy="40" rx="3" ry="2.4" fill="#111"/>
+<circle cx="108" cy="32" r="2.2" fill="#fff"/>
+<path d="M114 50 q4 6 8 0" fill="#e86a7a"/>
+</svg>
+<h2>See you Saturday, Mom</h2>
+<p class="small">Times and miles are approximate. Love you.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
